@@ -57,7 +57,8 @@ ysh-ovm-tarball() {
 
   # Run the file that depends on stdlib/
 
-  test/spec.sh ysh-stdlib --ovm-bin-dir $tar_root/_bin
+  #test/spec.sh ysh-stdlib --ovm-bin-dir $tar_root/_bin
+  ysh-all-serial --ovm-bin-dir $tar_root/_bin
 }
 
 tea-all() {
